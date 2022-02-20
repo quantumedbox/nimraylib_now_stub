@@ -9,7 +9,7 @@ Make sure that following is done:
 ## Usage
 All commands are defined in config.nims tasks and have following logic:
 - First comes action: `run` or `build`
-- Second comes target: `native` or `wasm
+- Second comes target: `native` or `wasm`
 - Last comes input file name, you can test it by `main.nim` supplied with this repo
 
 Example of usage:
