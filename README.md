@@ -3,13 +3,13 @@ Stub for building nimraylib_now library for different targets, be it native or w
 
 ## Preparation
 Make sure that following is done:
-- Emscripten compiler is in PATH
 - Nimraylib_now! is installed via nimble. If not, - just run `$ nimble install nimraylib_now` in your shell
+- For wasm make sure that emscripten compiler is isntalled and is in your PATH
 
 ## Usage
 All commands are defined in config.nims tasks and have following logic:
 - First comes action: `run` or `build`
-- Second comes target: `native` or `wasm
+- Second comes target: `native` or `wasm`
 - Last comes input file name, you can test it by `main.nim` supplied with this repo
 
 Example of usage:
