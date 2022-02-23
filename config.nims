@@ -62,7 +62,8 @@ task build_wasm, "build emscripten application":
       "-o" << projectExtension(".html") <<
       "-s USE_GLFW=3" <<
       "-DPLATFORM_WEB" <<
-      "--shell-file" << pathToRaylib & "/csources/raylib_mangled/shell.html"
+      "--shell-file" << pathToRaylib & "/csources/raylib_mangled/shell.html" <<
+      "-s ASYNCIFY"
 
     compileFlags =
       "-I" << pathToRaylib & "/nimraylib_now/mangled"
